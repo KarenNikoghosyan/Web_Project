@@ -1,0 +1,203 @@
+body {
+    padding-top: 55px;
+    background-color: rgb(247, 231, 231);
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+  }
+.side-nav a{
+    color: black;
+}
+.side-nav a:hover{
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+.side-nav a:active{
+    transform: translateY(1px);
+}
+.btn:active{
+    transform: translateY(1px);
+}
+.btn:hover{
+    cursor: pointer;
+}
+.carousel-item{
+    width:100%;
+    max-height: 415px !important;
+}
+footer {
+    text-align: center;
+  }
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between
+  }
+
+  .social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+  }
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background-color: #ffc107;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: black;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 38px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+.slideshow{
+    margin: 0 auto;
+    padding-top: 70px;
+    height: 700px;
+    box-sizing: border-box;
+}
+.content{
+    margin: auto;
+    width: 190px;
+    perspective: 1000px;
+    position: relative;
+    padding-top: 80px;
+}
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    float: right;
+    animation: rotar1 15s infinite linear;
+    transform-style: preserve-3d;
+}
+.content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+.content-carrousel figure{
+   width: 100%;
+   height: 120px;
+   border: 1px solid #4d444d;
+   overflow: hidden;
+   position: absolute; 
+}
+.content-carrousel figure:nth-child(1){
+    transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(2){
+    transform: rotateY(40deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(3){
+    transform: rotateY(80deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(4){
+    transform: rotateY(120deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(5){
+    transform: rotateY(160deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(6){
+    transform: rotateY(200deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(7){
+    transform: rotateY(240deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(8){
+    transform: rotateY(280deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(9){
+    transform: rotateY(320deg) translateZ(300px);
+}
+.shadow{
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+    border-radius: 2px;
+}
+.content-carrousel img{
+    image-rendering: auto;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+}
+.content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+@keyframes rotar1{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+.section3 i:hover{
+    cursor: pointer;
+}
+.section3 i:active{
+    transform: translateY(2px);
+}
+

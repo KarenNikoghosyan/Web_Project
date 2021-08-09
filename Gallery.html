@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Gallery</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/Gallery.css">
+    <link rel="stylesheet" href="CSS/Gallery2.css">
+    <link rel="stylesheet" href="CSS/media-query.css">
+    <link rel="stylesheet" href="CSS/bootstrap-toggle.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body id="bodyColor">
+    <nav class="navbar navbar-expand-md navbar-dark bg-warning fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="Gallery.html"><i class="far fa-image"></i>&nbsp; Gallery&trade;</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GameCard.html">Game</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <div class="row">
+                            <style>
+                                .toggle.ios,
+                                .toggle-on.ios,
+                                .toggle-off.ios {
+                                    border-radius: 20px;
+                                }
+
+                                .toggle.ios .toggle-handle {
+                                    border-radius: 20px;
+                                }
+                            </style>
+                            <strong>
+                                <div class="mt-2 ml-2" style="font-size: 16px;">Dark Mode</div>
+                            </strong>
+                            &nbsp;
+                            <input id="data-toggle" type="checkbox" data-toggle="toggle" data-style="ios"
+                                data-onstyle="dark" data-offstyle="light">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 style="padding: 8px 8px 8px 32px; margin-top: 38px;">Gallery</i></h2>
+        <h4 style="padding: 8px 8px 8px 32px; margin-top: 20px;">Choose a style</i></h4>
+        <a href="#" class="3Dcarousel">3D Carousel (version 1)</a>
+        <a href="#" class="3Dcarousel2">3D Carousel (version 2)</a>
+        <a href="#" class="galleryImages" id="showMessage">Gallery</a>
+        <a href="#" class="hide">Hide</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn bg-warning" onclick="openNav()"
+            style="border-radius: 100px; border: none; outline: none; color: white;">&#9776; </button>
+    </div>
+
+    <div class="flex-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 sidebarCollapse">
+                    <h2 class="my-4 text-warning">Gallery&nbsp;<i class="far fa-image"></i></h2>
+                    <h4 class="my-3" id="fontColor">Choose a style</h4>
+                    <div class="list-group side-nav">
+                        <a href="#" class="list-group-item 3Dcarousel">3D Carousel (version 1)</a>
+                        <a href="#" class="list-group-item 3Dcarousel2">3D Carousel (version 2)</a>
+                        <a href="#" class="list-group-item galleryImages">Gallery</a>
+                        <a href="#" class="list-group-item hide">Hide</a>
+                    </div>
+                </div>
+
+                <h2 id="supportMessage" style="text-align: center;" style="display: none;">Doesn't support mobile
+                    Devices/Tablets</h2>
+
+                <div class="w-25 mx-auto mt-3 col-lg-9">
+                    <div class="row">
+                        <div class="container">
+                            <section class="slideshow section1">
+                                <div style="text-align: center; font-size: 22px;" id="fontColor2">Click an image to
+                                    preview
+                                    it.</div>
+                                <div class="content">
+                                    <div class="content-carrousel">
+                                        <figure class="shadow"><img class="myGallery"
+                                                data-image="images/Gallery/image_1.jpg"
+                                                src="images/Gallery/image_1.jpg">
+                                        </figure>
+                                        <figure class="shadow"><img class="myGallery"
+                                                data-image="images/Gallery/image_2.jpg"
+                                                src="images/Gallery/image_2.jpg">
+                                        </figure>
+                                        <figure class="shadow"><img class="myGallery"
+                                                data-image="images/Gallery/image_3.jpg"
+                                                src="images/Gallery/image_3.jpg">
+                                        </figure>
+                                        <figure class="shadow"><img class="myGallery"
+                                                data-image="images/Gallery/image_4.jpg"
+                                                src="images/Gallery/image_4.jpg">
+                                        </figure>
+                                        <figure class="shadow"><img class="myGallery"
+                                                data-image="images/Gallery/image_5.jpg"
+                                                src="images/Gallery/image_5.jpg">
+                                        </figure>
+                                        <figure class="shadow"><img class="myGallery"
+                                                data-image="images/Gallery/image_6.jpg"
+                                                src="images/Gallery/image_6.jpg">
+                                        </figure>
+                                        <figure class="shadow"><img class="myGallery"
+                                                data-image="images/Gallery/image_7.jpg"
+                                                src="images/Gallery/image_7.jpg">
+                                        </figure>
+                                        <figure class="shadow"><img class="myGallery"
+                                                data-image="images/Gallery/image_8.jpg"
+                                                src="images/Gallery/image_8.jpg">
+                                        </figure>
+                                        <figure class="shadow"><img class="myGallery"
+                                                data-image="images/Gallery/image_9.jpg"
+                                                src="images/Gallery/image_9.jpg">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="container">
+                            <section class="slideshow2 section2">
+                                <!-- <div style="text-align: center; font-size: 22px;" id="fontColor2">Click an image to preview
+                                    it.</div> -->
+                                <div class="content">
+                                    <div class="content-carrousel2">
+                                        <figure class="shadow2"><img class="myGallery"
+                                                data-image="images/Gallery/image_1.jpg"
+                                                src="images/Gallery/image_1.jpg">
+                                        </figure>
+                                        <figure class="shadow2"><img class="myGallery"
+                                                data-image="images/Gallery/image_2.jpg"
+                                                src="images/Gallery/image_2.jpg">
+                                        </figure>
+                                        <figure class="shadow2"><img class="myGallery"
+                                                data-image="images/Gallery/image_3.jpg"
+                                                src="images/Gallery/image_3.jpg">
+                                        </figure>
+                                        <figure class="shadow2"><img class="myGallery"
+                                                data-image="images/Gallery/image_4.jpg"
+                                                src="images/Gallery/image_4.jpg">
+                                        </figure>
+                                        <figure class="shadow2"><img class="myGallery"
+                                                data-image="images/Gallery/image_5.jpg"
+                                                src="images/Gallery/image_5.jpg">
+                                        </figure>
+                                        <figure class="shadow2"><img class="myGallery"
+                                                data-image="images/Gallery/image_6.jpg"
+                                                src="images/Gallery/image_6.jpg">
+                                        </figure>
+                                        <figure class="shadow2"><img class="myGallery"
+                                                data-image="images/Gallery/image_7.jpg"
+                                                src="images/Gallery/image_7.jpg">
+                                        </figure>
+                                        <figure class="shadow2"><img class="myGallery"
+                                                data-image="images/Gallery/image_8.jpg"
+                                                src="images/Gallery/image_8.jpg">
+                                        </figure>
+                                        <figure class="shadow2"><img class="myGallery"
+                                                data-image="images/Gallery/image_9.jpg"
+                                                src="images/Gallery/image_9.jpg">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="row section3">
+                        <div class="container text-center hideGallery">
+                            <div style="text-align: center; font-size: 22px;" id="fontColor3">
+                                Click an arrow to change an image.
+                            </div>
+                            <br>
+                            <i class="fas fa-arrow-left" style="font-size: 35px;" onclick="left()" id="arrow1"></i>
+                            <img src="images/Gallery/image_1.jpg" id="images" style="width: 754px; height: 480px;">
+                            <i class="fas fa-arrow-right" style="font-size: 35px;" onclick="right()" id="arrow2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="py-5 bg-warning">
+            <div class="container-fluid">
+                <!-- Social buttons -->
+                <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/karen.nikoghosyan.1/"
+                            class="social-link"><i class="fa fa-facebook-f" style="color: white;"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://twitter.com/nikoghosyan11"
+                            class="social-link"><i class="fa fa-twitter" style="color: white;"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.instagram.com/karen_nikoghosyan/"
+                            class="social-link"><i class="fa fa-instagram" style="color: white;"></i></a></li>
+                </ul>
+                <!-- Social buttons -->
+
+                <div>
+                    <p class="m-0 text-center text-white" style="font-size: 19px;">Copyright &copy; Karen's
+                        Project&trade;
+                        2020
+                    </p>
+                </div>
+        </footer>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="gallery-modal" data-backdrop="static" data-keyboard="false"">
+        <div class=" modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header pl-0">
+                <h5 class="w-100 modal-title text-center position-absolute">Image Preview</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <image id="modal-gallery" src="#">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="JS/Jquery.js"></script>
+    <script src="JS/Gallery.js"></script>
+    <script src="JS/bootstrap-toggle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e4c66b6240.js" crossorigin="anonymous"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

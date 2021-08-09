@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Card Game</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/GameCard.css">
+    <link rel="stylesheet" href="CSS/media-query.css">
+    <link rel="stylesheet" href="CSS/bootstrap-toggle.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body id="bodyColor">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="GameCard.html"><i class="fas fa-gamepad"></i>&nbsp; Card Game&trade;</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="GameCard.html">Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <div class="row">
+                            <style>
+                                .toggle.ios,
+                                .toggle-on.ios,
+                                .toggle-off.ios {
+                                    border-radius: 20px;
+                                }
+
+                                .toggle.ios .toggle-handle {
+                                    border-radius: 20px;
+                                }
+                            </style>
+                            <strong>
+                                <div class="mt-2 ml-2" style="font-size: 16px;">Dark Mode</div>
+                            </strong>
+                            &nbsp;
+                            <input id="data-toggle" type="checkbox" data-toggle="toggle" data-style="ios"
+                                data-onstyle="dark" data-offstyle="light">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h4 style="padding: 8px 8px 8px 32px; margin-top: 38px; color: gray;">Doesn't support mobile Devices/Tablets</i>
+        </h4>
+    </div>
+
+    <div id="main">
+        <button class="openbtn bg-danger" onclick="openNav()"
+            style="border-radius: 100px; border: none; outline: none; color: white;">&#9776; </button>
+    </div>
+
+    <br>
+    <div class="flex-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 sidebarCollapse">
+
+                    <h2 id="fontColor" class="my-4 text-danger">Card Game&nbsp;<i class="fas fa-gamepad"></i></h2>
+                    <h4 id="fontColor2" class="my-3">Difficulties</h4>
+                    <div class="list-group side-nav">
+                        <a href="#" class="list-group-item level1">Easy</a>
+                        <a href="#" class="list-group-item level2">Medium</a>
+                        <a href="#" class="list-group-item level3">Hard</a>
+                    </div>
+
+                    <h4 id="fontColor3" class="my-3">Card size</h4>
+                    <div class="list-group side-nav">
+                        <a href="#" class="list-group-item" id="smallSize">Small</a>
+                        <a href="#" class="list-group-item" id="mediumSize">Medium</a>
+                        <a href="#" class="list-group-item" id="largeSize">Large (Default)</a>
+                    </div>
+
+                    <h4 id="fontColor4" class="my-3">Options</h4>
+                    <div class="list-group side-nav">
+                        <a href="#" class="list-group-item pause">Pause</a>
+                        <a href="#" class="list-group-item" onclick="reset()">Reset</a>
+                    </div>
+                    <br>
+
+                </div>
+
+                <h2 class="messageImpo" style="text-align: center;">Doesn't support mobile Devices/Tablets</h2>
+
+                <div class="w-25 mx-auto mt-3 col-lg-9">
+                    <div class="row">
+                        <div class="container">
+                            <div class="row easy hideGame" id="game1" style="width: 63%;">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <div id="countdown" class="col-12 hideClock" style="font-size: 22px; color: gray;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="row medium hideGame" id="game2" style="width: 63%;">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <div id="countdown2" class="col-12 hideClock" style="font-size: 22px; color: gray;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="row hard hideGame" id="game3" style="width: 63%;">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <img class="col-3 mb-3" src="images/Cards/back.png" alt="back">
+                                <div id="countdown3" class="col-12 hideClock" style="font-size: 22px; color: gray;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="py-5 bg-danger" style="margin-top: 50px;">
+            <div class="container-fluid">
+                <!-- Social buttons -->
+                <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/karen.nikoghosyan.1/"
+                            class="social-link"><i class="fa fa-facebook-f" style="color: white;"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://twitter.com/nikoghosyan11"
+                            class="social-link"><i class="fa fa-twitter" style="color: white;"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="https://www.instagram.com/karen_nikoghosyan/"
+                            class="social-link"><i class="fa fa-instagram" style="color: white;"></i></a></li>
+                </ul>
+                <!-- Social buttons -->
+
+                <div>
+                    <p class="m-0 text-center text-white" style="font-size: 19px;">Copyright &copy; Karen's
+                        Project&trade;
+                        2020
+                    </p>
+                </div>
+        </footer>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="game-modal" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header pl-0">
+                    <h5 class="w-100 modal-title text-center position-absolute">Congratulations!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center" style="font-size: 20px;">You won the game.</p>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="reset()" type="button" class="btn btn-danger">Reset</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="lose-modal" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header pl-0">
+                    <h5 class="w-100 modal-title text-center position-absolute">Attention!</h5>
+                    <button onclick="reset()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center" style="font-size: 20px;">Time out, you lost the game.</p>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="reset()" type="button" class="btn btn-danger" data-dismiss="modal">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="pause-modal1" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header pl-0">
+                    <h5 class="w-100 modal-title text-center position-absolute">Attention!</h5>
+                    <button onclick="resume1()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center" style="font-size: 20px;">Game paused.</p>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="resume1()" type="button" class="btn btn-danger"
+                        data-dismiss="modal">Resume</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="pause-modal2" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header pl-0">
+                    <h5 class="w-100 modal-title text-center position-absolute">Attention!</h5>
+                    <button onclick="resume2()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center" style="font-size: 20px;">Game paused.</p>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="resume2()" type="button" class="btn btn-danger"
+                        data-dismiss="modal">Resume</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="pause-modal3" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header pl-0">
+                    <h5 class="w-100 modal-title text-center position-absolute">Attention!</h5>
+                    <button onclick="resume3()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center" style="font-size: 20px;">Game paused.</p>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="resume3()" type="button" class="btn btn-danger"
+                        data-dismiss="modal">Resume</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="JS/GameCard.js"></script>
+    <script src="JS/Jquery.js"></script>
+    <script src="JS/bootstrap-toggle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e4c66b6240.js" crossorigin="anonymous"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

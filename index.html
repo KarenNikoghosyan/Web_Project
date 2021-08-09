@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Wallpapers - Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/media-query.css">
+    <link rel="stylesheet" href="CSS/bootstrap-toggle.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+
+</head>
+
+<body id="bodyColor">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-images"></i>&nbsp;Wallpapers&trade;</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GameCard.html">Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <div class="row">
+                            <style>
+                                .toggle.ios,
+                                .toggle-on.ios,
+                                .toggle-off.ios {
+                                    border-radius: 20px;
+                                }
+
+                                .toggle.ios .toggle-handle {
+                                    border-radius: 20px;
+                                }
+                            </style>
+                            <strong>
+                                <div class="mt-2 ml-2" style="font-size: 16px;">Dark Mode</div>
+                            </strong>
+                            &nbsp;
+                            <input id="data-toggle" type="checkbox" data-toggle="toggle" data-style="ios"
+                                data-onstyle="dark" data-offstyle="light">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 style="padding: 8px 8px 8px 32px; margin-top: 38px;">Wallpapers</i></h2>
+        <h4 style="padding: 8px 8px 8px 32px; margin-top: 20px;">Categories</i></h4>
+        <a href="#" class="animals">Animals</a>
+        <a href="#" class="nature">Nautue/Landscape</a>
+        <a href="#" class="space">Space</a>
+        <a href="#" class="places">Places/Monuments</a>
+        <a href="#" class="travel">Travel/Vacation</a>
+        <a href="#" class="music">Music</a>
+        <a href="#" class="architecture">Architecture</a>
+        <a href="#" class="sports">Sports</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn bg-primary" onclick="openNav()"
+            style="border-radius: 100px; border: none; outline: none; color: white;">&#9776; </button>
+    </div>
+    <br>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 sidebarCollapse">
+                <h2 class="my-4 text-primary">Wallpapers&nbsp;<i class="fas fa-images"></i></h2>
+                <h4 id="fontColor" class="my-3">Categories</h4>
+                <div class="list-group side-nav">
+                    <a href="#" class="list-group-item animals">Animals</a>
+                    <a href="#" class="list-group-item nature">Nautue/Landscape</a>
+                    <a href="#" class="list-group-item space">Space</a>
+                    <a href="#" class="list-group-item places">Places/Monuments</a>
+                    <a href="#" class="list-group-item travel">Travel/Vacation</a>
+                    <a href="#" class="list-group-item music">Music</a>
+                    <a href="#" class="list-group-item architecture">Architecture/Buildings</a>
+                    <a href="#" class="list-group-item sports">Sports</a>
+                </div>
+
+
+            </div>
+            <!-- /.col-lg-3 -->
+
+            <div class="col-lg-9 scaleImage">
+
+                <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="images/Animals/Dog.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/Nature/Dawn.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/Space/TwoSuns.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/Places/BledIsland.jpg" alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/Travel/Panorama.jpg" alt="Fifth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/Music/Tambourine.jpg" alt="Sixth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/Architecture/Dresden.jpg" alt="Seventh slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/Architecture/Opera.jpg" alt="Eighth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/Travel/Normandy.jpg" alt="Ninth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/Places/Yerevan.jpg" alt="Tenth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block img-fluid" src="images/Sports/Baseball.jpg" alt="Eleventh slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"
+                        style="z-index: 0;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"
+                        style="z-index: 0;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div class="row visibility">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Animals/Elephant.jpg" alt="elephant" title="Elephant">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Animals/Elephant.jpg">Elephant</a>
+                                </h4>
+                                <p class="card-text">Elephant walking on wet road.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Animals/Elephant.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Animals/Elephant.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Animals/Horse.jpg" alt="horse" title="Horse">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Animals/Horse.jpg">Horse</a>
+                                </h4>
+                                <p class="card-text">White horse on white sand.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Animals/Horse.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Animals/Horse.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Animals/Bird.jpg" alt="bird" title="Bird">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Animals/Bird.jpg">Bird</a>
+                                </h4>
+                                <p class="card-text">White bird flying over the sea during daytime.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Animals/Bird.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Animals/Bird.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Animals/Butterfly.jpg" alt="butterfly"
+                                title="Butterfly">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Animals/Butterfly.jpg">Butterfly</a>
+                                </h4>
+                                <p class="card-text">Two gray butterflies on yellow flowers.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Animals/Butterfly.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Animals/Butterfly.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Animals/Dog.jpg" alt="dog" title="Dog">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Animals/Dog.jpg">Dog</a>
+                                </h4>
+                                <p class="card-text">Brown short coated dog on gray rock during daytime.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Animals/Dog.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Animals/Dog.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Animals/Deer.jpg" alt="deer" title="Deer">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Animals/Deer.jpg">Deer</a>
+                                </h4>
+                                <p class="card-text">Brown deer lying on pink and white textile.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Animals/Deer.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Animals/Deer.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Animals/Cat.png" alt="cat" title="Cat">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Animals/Cat.png">Cat</a>
+                                </h4>
+                                <p class="card-title">Cat's eyes.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Animals/Cat.png">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Animals/Cat.png">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Animals/Owl.jpg" alt="owl" title="Owl"
+                                style="height: 160px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Animals/Owl.jpg">Owl</a>
+                                </h4>
+                                <p class="card-title">Owl at the night sky.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Animals/Owl.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Animals/Owl.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Animals/Crow.jpg" alt="crow" title="Crow"
+                                style="height: 160px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Animals/Crow.jpg">Crow</a>
+                                </h4>
+                                <p class="card-title">Crow at the night castle.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Animals/Crow.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Animals/Crow.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.row -->
+
+                <!-- Abs exercises -->
+                <div class="row visibility2">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Nature/Railroad.jpg" alt="Railroad" title="Railroad">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Nature/Railroad.jpg">Railroad</a>
+                                </h4>
+                                <p class="card-text">Train rail in the middle of green grass field.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Nature/Railroad.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Nature/Railroad.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Nature/Greentrees.jpg" alt="trees" title="Green Trees"
+                                style="height: 160px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Nature/Greentrees.jpg">Green Trees</a>
+                                </h4>
+                                <p class="card-text">Green trees on brown rock formation on lake during daytime.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Nature/Greentrees.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Nature/Greentrees.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Nature/Asphalt.jpg" alt="asphalt" title="Asphalt">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Nature/Asphalt.jpg">Asphalt</a>
+                                </h4>
+                                <p class="card-text">Gray asphalt road near green grass field and mountains during
+                                    daytime.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Nature/Asphalt.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Nature/Asphalt.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Nature/WoodenHouse.jpg" alt="WoodenHouse"
+                                title="Wooden House">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Nature/WoodenHouse.jpg">Wooden House</a>
+                                </h4>
+                                <p class="card-text">Brown wooden house on lake near mountain under blue sky during day.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Nature/WoodenHouse.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Nature/WoodenHouse.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Nature/Sunset.jpg" alt="sunset" title="Sunset">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Nature/Sunset.jpg">Sunset</a>
+                                </h4>
+                                <p class="card-text">Silhouette of tree near body of water during beautiful sunset.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Nature/Sunset.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Nature/Sunset.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Nature/Dawn.jpg" alt="dawn" title="Dawn">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Nature/Dawn.jpg">Dawn</a>
+                                </h4>
+                                <p class="card-text">Brown and green mountains under blue sky during daytime.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Nature/Dawn.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Nature/Dawn.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Nature/Ararat.jpg" alt="ararat" title="Ararat"
+                                style="height: 160px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Nature/Ararat.jpg">Ararat</a>
+                                </h4>
+                                <p class="card-text">Mountain ararat of Armenia.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Nature/Ararat.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Nature/Ararat.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Nature/Valley.jpg" alt="valley" title="Valley">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Nature/Valley.jpg">Valley</a>
+                                </h4>
+                                <p class="card-text">Snow covered trees during daytime.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Nature/Valley.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Nature/Valley.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Nature/Greengrass.jpg" alt="greenGrass"
+                                title="Green Grass" style="height: 160px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Nature/Greengrass.jpg">Green Grass</a>
+                                </h4>
+                                <p class="card-text">Green grass field under white clouds and blue sky during daytime.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Nature/Greengrass.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Nature/Greengrass.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Leg exercises -->
+                <div class="row visibility3">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Space/TwoSuns.jpg" alt="Two Suns" title="Two Suns">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Space/TwoSuns.jpg">Two Suns</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Space/TwoSuns.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Space/TwoSuns.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Space/Ufo.jpg" alt="UFO" title="UFO">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Space/Ufo.jpg">UFO</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Space/Ufo.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Space/Ufo.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Space/Milky-way.jpg" alt="Milky Way" title="Milky Way"
+                                style="height: 145px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Space/Milky-way.jpg">Milky Way</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Space/Milky-way.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Space/Milky-way.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Space/Earth.jpg" alt="earth" title="Earth">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Space/Earth.jpg">Earth</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Space/Earth.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Space/Earth.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Space/Science-Fiction.jpg" alt="Sci-Fi"
+                                title="Sci-Fi">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Space/Science-Fiction.jpg">Sci-Fi</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Space/Science-Fiction.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Space/Science-Fiction.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Space/Astronaut.jpg" alt="Astronaut"
+                                title="Astronaut">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Space/Astronaut.jpg">Astronaut</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Space/Astronaut.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Space/Astronaut.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Space/Mars.jpg" alt="mars" title="Mars">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Space/Mars.jpg">Mars</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Space/Mars.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Space/Mars.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Space/Galaxy.jpg" alt="galaxy" title="Galaxy">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Space/Galaxy.jpg">Galaxy</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Space/Galaxy.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Space/Galaxy.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Space/Spaceship.jpg" alt="spaceship"
+                                title="Spaceship">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Space/Spaceship.jpg">Spaceship</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Space/Spaceship.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Space/Spaceship.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row visibility4">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Places/Lighthouse.jpg" alt="Lighthouse"
+                                title="Lighthouse">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Places/Lighthouse.jpg">Lighthouse</a>
+                                </h4>
+                                <p class="card-text">White lighthouse on top of gray concrete dock during daytime.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Places/Lighthouse.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Places/Lighthouse.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Places/BledIsland.jpg" alt="BledIsland"
+                                title="Bled Island">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Places/BledIsland.jpg">Bled Island</a>
+                                </h4>
+                                <p class="card-text">Body of water near mountain during daytime.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Places/BledIsland.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Places/BledIsland.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Places/Dresden.jpg" alt="Dresden" title="Dresden"
+                                style="height: 170px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Places/Dresden.jpg">Dresden</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Places/Dresden.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Places/Dresden.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Places/Goldengate.jpg" alt="Golden gate"
+                                title="Golden gate">
+                            <div class="card-body">
+                                <h4 class="card-title text-center text-center">
+                                    <a href="images/Places/Goldengate.jpg">Golden Gate</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Places/Goldengate.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Places/Goldengate.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Places/Prague.jpg" alt="Prague" title="Prague"
+                                style="height: 170px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Places/Prague.jpg">Prague</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Places/Prague.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Places/Prague.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Places/Portugal.jpg" alt="Portugal" title="Portugal">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Places/Portugal.jpg">Portugal</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Places/Portugal.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Places/Portugal.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Places/Yerevan.jpg" alt="yerevan" title="Yerevan">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Places/Yerevan.jpg">Yerevan</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Places/Yerevan.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Places/Yerevan.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Places/Moscow.jpg" alt="moscow" title="Moscow">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Places/Moscow.jpg">Moscow</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Places/Moscow.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Places/Moscow.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Places/Italy.jpg" alt="italy" title="Italy">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Places/Italy.jpg">Italy</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Places/Italy.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Places/Italy.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row visibility5">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Travel/Island.jpg" alt="Island" title="Island">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Travel/Island.jpg">Island</a>
+                                </h4>
+                                <p class="card-text">Body of water under cloudy sky during daytime.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Travel/Island.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Travel/Island.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Travel/PacificOcean.jpg" alt="PacificOcean"
+                                title="Pacific Ocean" style="height: 130px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Travel/PacificOcean.jpg">Pacific Ocean</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Travel/PacificOcean.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Travel/PacificOcean.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Travel/Iceland.jpg" alt="Iceland" title="Iceland">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Travel/Iceland.jpg">Iceland</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Travel/Iceland.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Travel/Iceland.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Travel/Norway.jpg" alt="Norway" title="Norway">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Travel/Norway.jpg">Norway</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Travel/Norway.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Travel/Norway.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Travel/Ladakh.jpg" alt="Ladakh" title="Ladakh">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Travel/Ladakh.jpg">Ladakh</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Travel/Ladakh.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Travel/Ladakh.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Travel/Panorama.jpg" alt="Panorama" title="Panorama">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Travel/Panorama.jpg">Panorama</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Travel/Panorama.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Travel/Panorama.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Travel/Scotland.jpg" alt="Scotland" title="Scotland">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Travel/Scotland.jpg">Scotland</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Travel/Scotland.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Travel/Scotland.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Travel/Normandy.jpg" alt="Normandy" title="Normandy"
+                                style="height: 145px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Travel/Normandy.jpg">Normandy</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Travel/Normandy.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Travel/Normandy.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Travel/Iceberg.jpg" alt="Iceberg" title="Iceberg"
+                                style="height: 145px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Travel/Iceberg.jpg">Iceberg</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Travel/Iceberg.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Travel/Iceberg.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row visibility6">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Music/Musical-background.jpg" alt="MusicalBackground"
+                                title="Musical background">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Music/Musical-background.jpg">Musical Background</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Music/Musical-background.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Music/Musical-background.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Music/MusicColors.png" alt="MusicColors"
+                                title="Music Colors">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Music/MusicColors.png">Music Colors</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Music/MusicColors.png">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Music/MusicColors.png">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Music/Roses.jpg" alt="Roses" title="Roses"
+                                style="height: 150px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Music/Roses.jpg">Roses</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Music/Roses.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Music/Roses.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Music/Guitar.jpg" alt="Guitar" title="Guitar"
+                                style="height: 145px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Music/Guitar.jpg">Guitar</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Music/Guitar.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Music/Guitar.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Music/Woofer.png" alt="Woofer" title="Woofer">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Music/Woofer.png">Woofer</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Music/Woofer.png">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Music/Woofer.png">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Music/Tambourine.jpg" alt="Tambourine"
+                                title="Tambourine">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Music/Tambourine.jpg">Tambourine</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Music/Tambourine.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Music/Tambourine.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Music/Violin.jpg" alt="Violin" title="Violin"
+                                style="height: 145px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Music/Violin.jpg">Violin</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Music/Violin.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Music/Violin.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Music/Piano.jpg" alt="Piano" title="Piano"
+                                style="height: 145px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Music/Piano.jpg">Piano</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Music/Piano.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Music/Piano.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Music/WaveSound.jpg" alt="WaveSound"
+                                title="Wave Sound">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Music/WaveSound.jpg">Wave Sound</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Music/WaveSound.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Music/WaveSound.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row visibility7">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Architecture/Louvre.jpg" alt="Louvre" title="Louvre">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Architecture/Louvre.jpg">Louvre</a>
+                                </h4>
+                                <p class="card-text">Brown concrete building during night time.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Architecture/Louvre.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Architecture/Louvre.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Architecture/Staircase.jpg" alt="Staircase"
+                                title="Stair case">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Architecture/Staircase.jpg">Stair Case</a>
+                                </h4>
+                                <p class="card-text">Brown spiral staircase with black round hole.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Architecture/Staircase.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Architecture/Staircase.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Architecture/Dresden.jpg" alt="Dresden"
+                                title="Dresden" style="height: 150px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Architecture/Dresden.jpg">Dresden</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Architecture/Dresden.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Architecture/Dresden.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Architecture/City.jpg" alt="City" title="City">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Architecture/City.jpg">City</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Architecture/City.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Architecture/City.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Architecture/TextureWall.jpg" alt="TextureWall"
+                                title="Texture Wall">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Architecture/TextureWall.jpg">Texture Wall</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Architecture/TextureWall.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Architecture/TextureWall.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Architecture/Facades.jpg" alt="Facades"
+                                title="Facades" style="height: 150px;">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Architecture/Facades.jpg">Facades</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Architecture/Facades.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Architecture/Facades.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Architecture/Manhattan.jpg" alt="Manhattan"
+                                title="Manhattan">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Architecture/Manhattan.jpg">Manhattan</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Architecture/Manhattan.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Architecture/Manhattan.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Architecture/Opera.jpg" alt="Opera" title="Opera">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Architecture/Opera.jpg">Opera</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Architecture/Opera.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Architecture/Opera.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Architecture/Cathedral.jpg" alt="Cathedral"
+                                title="Cathedral">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Architecture/Cathedral.jpg">Cathedral</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Architecture/Cathedral.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Architecture/Cathedral.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row visibility8">
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Sports/Bicycle.jpg" alt="Bicycle" title="Bicycle">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Sports/Bicycle.jpg">Bicycle</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Sports/Bicycle.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Sports/Bicycle.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Sports/Golf.jpg" alt="Golf" title="Golf">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Sports/Golf.jpg">Golf</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Sports/Golf.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Sports/Golf.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Sports/Biker.jpg" alt="Biker" title="Biker">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Sports/Biker.jpg">Biker</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Sports/Biker.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Sports/Biker.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Sports/Baseball.jpg" alt="Baseball" title="Baseball">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Sports/Baseball.jpg">Baseball</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Sports/Baseball.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Sports/Baseball.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Sports/Snowboard.jpg" alt="Snowboard">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Sports/Snowboard.jpg">Snowboard</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Sports/Snowboard.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Sports/Snowboard.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Sports/Diver.jpg" alt="Diver" title="Diver">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Sports/Diver.jpg">Diver</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom" data-image="images/Sports/Diver.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Sports/Diver.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Sports/Football.jpg" alt="Football" title="Football">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Sports/Football.jpg">Football</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Sports/Football.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download
+                                    href="images/Sports/Football.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Sports/Gymnast.jpg" alt="Gymnast" title="Gymnast">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Sports/Gymnast.jpg">Gymnast</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Sports/Gymnast.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Sports/Gymnast.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/Sports/Soccer.jpg" alt="Soccer" title="Soccer">
+                            <div class="card-body">
+                                <h4 class="card-title text-center">
+                                    <a href="images/Sports/Soccer.jpg">Soccer</a>
+                                </h4>
+                            </div>
+                            <div class="card-footer text-center">
+                                <div class="myimage btn btn-primary btn-lg custom"
+                                    data-image="images/Sports/Soccer.jpg">
+                                    Preview
+                                </div>
+                                <br>
+                                <a class="btn btn-primary btn-lg custom mt-2" download href="images/Sports/Soccer.jpg">
+                                    Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.col-lg-9 -->
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-primary">
+        <div class="container">
+            <!-- Social buttons -->
+            <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/karen.nikoghosyan.1/"
+                        class="social-link"><i class="fa fa-facebook-f" style="color: white;"></i></a></li>
+                <li class="list-inline-item"><a target="_blank" href="https://twitter.com/nikoghosyan11"
+                        class="social-link"><i class="fa fa-twitter" style="color: white;"></i></a></li>
+                <li class="list-inline-item"><a target="_blank" href="https://www.instagram.com/karen_nikoghosyan/"
+                        class="social-link"><i class="fa fa-instagram" style="color: white;"></i></a></li>
+            </ul>
+            <!-- Social buttons -->
+
+            <div>
+                <p class="m-0 text-center text-white" style="font-size: 19px;">Copyright &copy; Karen's Project&trade;
+                    2020
+                </p>
+            </div>
+    </footer>
+
+    <div>
+        <div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="image-modal-label"
+            data-backdrop="static" data-keyboard="false""
+            aria-hidden=" true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="w-100 modal-title text-center position-absolute" id="image-modal-label">Image Preview
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <image id="modal-image" src="#">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="JS/Jquery.js"></script>
+    <script src="JS/bootstrap-toggle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e4c66b6240.js" crossorigin="anonymous"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
